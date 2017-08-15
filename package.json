@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf dist",
-    "prod": "npm run clean && npm run build",
+    "sprite": "spritesmith --rc spritesmith.js",
     "build": "npm run build:html && npm run copy:img && build:webpack",
     "dev": "npm run dev:html & npm run copy:img & npm run dev:webpack & npm run bs",
     "bs": "browser-sync start --server --serveStatic './dist' --files './dist/**/*.html, ./dist/css/**/*.css, ./dist/js/**/*.js, ./dist/img/**/*.png'",
@@ -13,7 +13,6 @@
     "build:html": "babel-node metalsmith.js",
     "dev:html": "babel-node metalsmith.js",
     "copy:img": "mkdir -p ./dist/img && cp ./src/img/*.png ./dist/img/",
-    "sprite": "spritesmith --rc spritesmith.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "https://github.com/rnaxu/project-sample.git",

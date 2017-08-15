@@ -1,0 +1,19 @@
+:root {
+  /* font-size */
+  --font-size-root: 12px;
+  --font-size-base: 1rem;
+  --font-size-l: 1.33333rem; /* 16px */
+
+  /* font-family */
+  --font-family-default: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+
+  /* color */
+  --color-default: #333;
+  --color-link: #2086d7;
+
+  /* bgColor */
+  --bgColor-default: #fff;
+
+  /* line-height */
+  --line-height-default: 1.25;
+}

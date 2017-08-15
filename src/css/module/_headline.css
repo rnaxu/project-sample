@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+.headline {
+  font-size: var(--font-size-l);
+  font-weight: bold;
+  margin: 10px;
+}

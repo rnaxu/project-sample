@@ -1,0 +1,14 @@
+:root {
+  --place: {
+    background-image: url(../img/sprite.png);
+    background-position: 0px 0px;
+    width: 24px;
+    height: 24px;
+  };
+  --search: {
+    background-image: url(../img/sprite.png);
+    background-position: -28px 0px;
+    width: 24px;
+    height: 24px;
+  };
+}

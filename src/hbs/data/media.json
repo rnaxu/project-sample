@@ -1,0 +1,18 @@
+[
+  {
+    "img": {
+      "src": "./img/dummy.png",
+      "alt": "dummy"
+    },
+    "title": "Title1",
+    "text": "Text1"
+  },
+  {
+    "img": {
+      "src": "./img/dummy.png",
+      "alt": "dummy"
+    },
+    "title": "Title2",
+    "text": "Text1"
+  }
+]

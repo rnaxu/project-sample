@@ -1,0 +1,15 @@
+---
+title: index
+---
+
+<h1 class="headline">index | project-sample</h1>
+
+<ul>
+  {{#each collections.pages}}
+    <li>
+      <ul>
+        <li><a href="{{this.id}}.html">{{this.title}}</a></li>
+      </ul>
+    </li>
+  {{/each}}
+</ul>

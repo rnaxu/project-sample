@@ -17,9 +17,7 @@ const BUILD_MAP = {
     watch: () => watch({
       paths: {
         '${source}/**/*': true,
-        './src/hbs/data/**/*': '**/*',
-        './src/hbs/layouts/**/*': '**/*',
-        './src/hbs/partials/**/*': '**/*',
+        './src/hbs/**/*': '**/*',
       },
     }),
   },
@@ -36,7 +34,6 @@ Metalsmith(__dirname)
     pages: {
       pattern: ['**/*.hbs', '!index.hbs'],
       sortBy: 'id',
-      reverse: true,
     },
   }))
   .use(layouts({

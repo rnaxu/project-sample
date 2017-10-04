@@ -5,14 +5,14 @@
   "scripts": {
     "clean": "rm -rf dist",
     "sprite": "spritesmith --rc spritesmith.js",
-    "build": "npm run build:html && npm run copy:img && build:webpack",
+    "build": "npm run build:html && npm run copy:img && npm run build:webpack",
     "dev": "npm run dev:html & npm run copy:img & npm run dev:webpack & npm run bs",
-    "bs": "browser-sync start --server --serveStatic './dist' --files './dist/**/*.html, ./dist/css/**/*.css, ./dist/js/**/*.js, ./dist/img/**/*.png'",
+    "bs": "browser-sync start --server --serveStatic 'dist' --files './dist/**/*'",
     "build:webpack": "webpack -d --progress --colors",
     "dev:webpack": "webpack -d --progress --colors --watch",
     "build:html": "babel-node metalsmith.js",
     "dev:html": "babel-node metalsmith.js",
-    "copy:img": "mkdir -p ./dist/img && cp ./src/img/*.png ./dist/img/",
+    "copy:img": "mkdir -p dist/img && cp src/img/*.png dist/img/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "https://github.com/rnaxu/project-sample.git",
@@ -50,5 +50,8 @@
     "stylelint-config-standard": "^17.0.0",
     "uglifyjs-webpack-plugin": "^0.4.6",
     "webpack": "^3.5.4"
+  },
+  "dependencies": {
+    "postcss-apply": "^0.8.0"
   }
 }

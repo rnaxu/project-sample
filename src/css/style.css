@@ -2,7 +2,7 @@
 
 /* setting */
 @import 'setting/_var.css';
-/* @import 'setting/_sprite.css'; */
+@import 'setting/_sprite.css';
 
 /* base */
 @import 'base/_reset.css';
@@ -10,7 +10,7 @@
 
 /* module */
 @import 'module/_headline.css';
-/* @import 'module/_ic.css'; */
+@import 'module/_ic.css';
 @import 'module/_media.css';
 
 /* utility */
